@@ -25,6 +25,7 @@ namespace MainManagerIOT
         {
             this.brokerInputField.text = "mqttserver.tk";
             this.userNameInputField.text = "bkiot";
+            this.passwordInputField.contentType = InputField.ContentType.Password;
             this.passwordInputField.text = "12345678";
         }
 
@@ -115,7 +116,6 @@ namespace MainManagerIOT
                 _controlLed_data.led_status = "On";
             else
                 _controlLed_data.led_status = "Off";
-            Debug.Log("HIep led");
             return _controlLed_data;
         }
 
